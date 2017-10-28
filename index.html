@@ -1,0 +1,76 @@
+<html>
+  <body>
+    <style>
+      body {
+        background: grey;
+      }
+      .container {
+        width:50vw;
+        height: 50vw;
+        position: relative;
+        margin:auto;
+        border-radius: 100%;
+        overflow: hidden;
+      }
+      .green {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background: rgb(0,255,0);
+        opacity: 0.5;
+      }
+      .red {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background: rgb(255,0,0);
+        opacity: 0.5;
+      }
+      .yellow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        background: rgb(255,255,0);
+        opacity: 0.5;
+      }
+      .blue {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        background: rgb(0,0,255);
+        opacity: 0.5;
+      }
+      .center {
+        position: absolute;
+        border-radius: 100%;
+        background: black;
+        left:50%;
+        width: 50%;
+        height: 50%;
+        top:50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+      .active {
+        opacity: 1;
+      }
+    </style>
+    <div class="container">
+      <div id="green" class="green"></div>
+      <div id="red" class="red"></div>
+      <div id="yellow" class="yellow"></div>
+      <div id="blue" class="blue"></div>
+      <div id="center" class="center"></div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+
+</html>
